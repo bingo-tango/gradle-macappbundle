@@ -1,5 +1,15 @@
 A [Gradle](http://www.gradle.org) Plugin to create a Mac OSX .app application and dmg based on the project.
 
+Forked from https://github.com/crotwell/gradle-macappbundle at version 2.3.0. 
+
+We needed to make some changes to get it working with Gradle 6+ and Java 11+.
+
+This project is required for building Raven. The output JAR needs to be installed in your local Maven repository.
+
+To do this, you should just need to clone this repository, and run:
+
+```gradle publishToMavenLocal```
+
 ***Note I am no longer able to actively develop this project.***
 
 I will consider pull requests, but I believe that the Java world has changed significantly over the past several years, and this plugin may no longer be the recommended way to package a Java app for OSX.
